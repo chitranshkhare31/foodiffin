@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/modal.css">
+        <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
+        <title>Home</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+               <a href="index.html" class="nav__logo">FOODIFFIN</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                        <li class="nav__item"><a href="assets/cont-form.html" class="nav__link">Contact us</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">FOODIFFIN</h1>
+                        <h2 class="home__subtitle">Lunchbox a day, keep your tension away.</h2>
+                        <button class="button" id="myBtn"> Order Now </button>
+                        <a href="#menu" id="plans"style="color: #069C54; padding: 0 0 0 13px;" >View Plans</a>
+                    </div>
+                    <img src="assets/img/home-img.png" alt="" class="home__img">
+                    
+<!-- The Modal -->
+        <div id="myModal" class="modal">
+
+     <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="form-style-5">
+        <h1 id="title">Book A Meal</h1><br>
+        <form action="assets/js/alert.js" method="POST">
+        <fieldset>
+        <legend><span class="number">1</span>Personal Information</legend>
+        <input type="text" name="name" placeholder="Your Name *"required="required" autocomplete="off">
+        <input type="email" name="email" placeholder="Your Email *"required="required"autocomplete="off">
+        <input type="text" name="phone" placeholder="Phone Number *"required="required"autocomplete="off">
+        <textarea name="address" placeholder="Address" autocomplete="off"></textarea>
+             
+        </fieldset>
+        <fieldset>
+        <legend><span class="number">2</span> Meal Information</legend>
+        <select id="job" name="days">
+            <optgroup label="Select">
+              <option value="Monday-Friday">Monday-Friday</option>
+              <option value="Monday-Saturday">Monday-Saturday</option>
+              <option value="Monday-Sunday">Monday-Sunday</option>
+            </optgroup>
+            </select>
+            <label for="job">No. of Meals Required </label>
+            <select id="job" name="required">
+                <optgroup label="Selects">
+                  <option value="3 Meal Breakfast + Lunch + Dinner">3 Meal Breakfast + Lunch + Dinner</option>
+                  <option value="2 Meal Lunch+ Dinner">2 Meal Lunch+ Dinner</option>
+                  <option value="1 Meal Lunch or Dinner">1 Meal Lunch or Dinner</option>
+                 
+                </optgroup>
+                </select>
+                <label for="job">Start on </label>
+                <input type="date" name="date"  required="required" >
+        </fieldset>
+        <input type="submit" value="Apply" />
+        </form>
+        </div>
+  </div>
+
+</div>
+                    
+                </div>
+            </section>
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">About us</span>
+                        <h2 class="section-title about__initial">We cook the best <br> tasty food</h2>
+                        <p class="about__description">We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us.</p>
+                    </div>
+
+                    <img src="assets/img/dabbewala.png" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!--========== SERVICES ==========-->
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">Offering</span>
+                <h2 class="section-title">Our amazing services</h2>
+
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <img src="assets/img/cook.png" alt="" height="80" width="80">
+                        <h3 class="services__title">Home Cooked Food</h3>
+                        <p class="services__description">We offer home cooked food so you don't miss your home as much as you would think.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="assets/img/touch.png" alt="" height="80" width="80">
+                        <h3 class="services__title">Easy and Convenient</h3>
+                        <p class="services__description">Ordering your tiffin is simple. Simply fill out the form and wait for a callback.</p>
+                    </div>
+
+                    <div class="services__content">
+                       <img src="assets/img/delivery-boy.png" alt="" height="80" width="80">
+                        <h3 class="services__title">Doostep delivery</h3>
+                        <p class="services__description">We deliver right to your door, so you don't have to go anywhere to get your food.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Special</span>
+                <h2 class="section-title">Our Plans</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/lunchbox.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Tiffin</h3>
+                        <span class="menu__detail">Single Day</span>
+                        <span class="menu__preci">₹160</span>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/lunchbox.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Tiffin</h3>
+                        <span class="menu__detail">20 Days</span>
+                        <span class="menu__preci">₹3000</span>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/lunchbox.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Tiffin</h3>
+                        <span class="menu__detail">30 Days</span>
+                        <span class="menu__preci">₹4500</span>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== APP =======-->
+            <section class="app section bd-container">
+                <div class="app__container bd-grid">
+                    <div class="app__data">
+                        <span class="section-subtitle app__initial" >Menu</span>
+                        <h2 class="section-title app__initial">Our Weekly Menu</h2>
+                    </div>
+
+                    <img src="assets/img/menu.jpg" alt="" class="app__img">
+                </div>
+            </section>
+
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Help/Suggestion</span>
+                        <h2 class="section-title contact__initial">Contact us</h2>
+                       
+                    </div>
+
+                    <div class="contact__button">
+                        <a href="assets/cont-form.html" class="button">Contact us</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                   <img src="assets/img/Foodfin1.png" alt="" id="footer-logo">
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Delivery</a></li>
+                        <li><a href="#menu" class="footer__link">Pricing</a></li>
+ 
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        
+                        <li><a href="assets/cont-form.html" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Address</h3>
+                    <ul>
+                        <li>Jabalpur</li>
+                        <li>Madhya Pradesh</li>
+                        <li>999 - 888 - 777</li>
+                        <li>supportfoodiffin@email.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2020 Foodiffin. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/modal.js"></script>
+        
+    </body>
+</html>
